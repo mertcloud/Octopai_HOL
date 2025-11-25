@@ -54,7 +54,7 @@ icon.
 
 **Context**: An auditor requests a trace of where PII flows across your environment.
 
-1. Navigate to the **E2E Lineage Dashboard** by clicking the <img width="43" height="43" alt="image" src="https://github.com/user-attachments/assets/f4f98cbc-d269-4d09-93ea-e380385a732d" />
+1. Navigate to the **E2E Lineage Dashboard** by clicking the <img width="43" height="43" alt="image" src="https://github.com/user-attachments/assets/ea13c382-b789-40ef-a8b9-883241f63208" />
  icon and search for **EmailAddress**.
 2. Hover over one of the reports and click the **E2E Column Lineage** <img width="28" height="29" alt="image" src="https://github.com/user-attachments/assets/0703281a-6c88-46b5-bf5a-2c44696de908" />
  icon.
