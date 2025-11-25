@@ -41,7 +41,7 @@ icon.
  icon.
 6. Use **Impact Analysis/Lineage Override** <img width="23" height="25" alt="image" src="https://github.com/user-attachments/assets/cb83e796-b82e-4379-8479-93e38c950a26" />
  in the radial menu of objects to discover dependencies.
-7. Navigate to the **E2E Lineage Dashboard** <img width="43" height="43" alt="image" src="https://github.com/user-attachments/assets/219903f5-2783-4f29-9dd7-110a5158d917" />
+7. Navigate to the **E2E Lineage Dashboard** <img width="43" height="43" alt="image" src="https://github.com/user-attachments/assets/c6b95f95-183e-43a7-b2b4-1b03f8dd14c9" />
  and search for **EmailAddress**.
 8. Under the **DB Objects** section, locate the table with the **Person** schema and **EmailAddress** column.
 9. Click on the **E2E Column Lineage** <img width="28" height="29" alt="image" src="https://github.com/user-attachments/assets/df487676-5220-423a-9d68-b7e5150bbc73" />
