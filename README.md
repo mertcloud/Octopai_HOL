@@ -2,7 +2,7 @@
 
 **Hands-On Lab Exercises**
 
-# Exercise #1
+## Exercise #1
 
 **Root Cause Analysis (RCA)**
 
