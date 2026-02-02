@@ -56,20 +56,19 @@ icon.
 
 1. Navigate to the **E2E Lineage Dashboard** by clicking the <img width="43" height="43" alt="image" src="https://github.com/user-attachments/assets/ea13c382-b789-40ef-a8b9-883241f63208" />
  icon and search for **EmailAddress**.
-2. Hover over one of the reports and click the **E2E Column Lineage** <img width="28" height="29" alt="image" src="https://github.com/user-attachments/assets/0703281a-6c88-46b5-bf5a-2c44696de908" />
+2. Hover over one of **PERSON-->EmailAddress** report and click the **E2E Column Lineage** <img width="28" height="29" alt="image" src="https://github.com/user-attachments/assets/0703281a-6c88-46b5-bf5a-2c44696de908" />
  icon.
-3. Review the path from CRM → ETL → DWH → BI Report.
+3. Review the path from CRM → ETL → DWH → BI Report (from left to right). Even though this example is hold simple (on purpose), it still shows you the path of a single column through multiple different tools. If a BI Report is broken, you can usually see here where to search for potential breaking changes.
 4. Go to the **vEmployee** component in the ETL, click <img width="12" height="18" alt="image" src="https://github.com/user-attachments/assets/cbfe525b-4593-4e58-9480-c7a02b1b0f40" />
- and then select **Inner System Lineage** to review the ETL script.
-5. Return to **E2E Column Lineage** by clicking on the <img width="35" height="34" alt="image" src="https://github.com/user-attachments/assets/04855cbe-f632-461e-8af6-8409c27249c2" />
- icon.
-6. Go to the farthest upstream object and find the **EmailAddress** column. Click the <img width="12" height="18" alt="image" src="https://github.com/user-attachments/assets/741170c1-a298-496c-b395-f31f96126d64" />
- and select **Override Column Lineage** to view additional downstream objects.
+ and then select **Inner System Lineage** to review the ETL script. This view can help you finding misconfigured ETL scripts from one single pane of tool.
+5. Return to **E2E Column Lineage** by using the **Go Back** function of your browser
+6. Go to the farthest upstream object and find the **EmailAddress** column (part of the **EmailAddress** table). Click the <img width="12" height="18" alt="image" src="https://github.com/user-attachments/assets/741170c1-a298-496c-b395-f31f96126d64" />
+ and select **Override Column Lineage** to view additional downstream objects. This way, you don not only see the single path from **AdventureWorks2014** SQLServer Database to the **EmployeePersonalInfo** report we selected in Step 2 but also all other parallel lines that are using this **EmailAddress** column in any way.
 7. Open the **Knowledge Hub** <img width="27" height="34" alt="image" src="https://github.com/user-attachments/assets/47dbd020-d2bb-4ba3-8983-a59c4efb24e6" />
  and search for **EmailAddress**.
-8. Explore results using filters, glossary, and tags.
+8. Explore results using filters, glossary, and tags. You can maintain multiple properties here for each Asset
 9. Export Total Assets to CSV by clicking the <img width="21" height="22" alt="image" src="https://github.com/user-attachments/assets/4de973ac-b4ae-4b76-906a-3538813de453" />
- icon for an audit-ready report.
+ icon at the top of the Total Assets list for an audit-ready report.
 
 **Benefit**: Octopai simplifies compliance requests by making them automated and traceable.
 # 
@@ -88,15 +87,16 @@ icon.
    c. Hover over the **DwhFactSales** table and click the <img width="28" height="31" alt="image" src="https://github.com/user-attachments/assets/185a2164-f004-4e65-8f7d-4851547808cf" />
  icon.
    d. Note the two ETLs feeding the **DwhFactSales** table.
-   e. Open **Cross System Lineage** for both ETLs to compare downstream objects.
+   e. Hover over each of both ETLs, click on the arrow to the left and the arrow to the right to see all **Downstream and Upstream Objects** for both ETLs. This view helps you seeing all dependencies before migrating one of the two ETLs to the Cloud. 
+   Let's see how it would look like if prepare a migration of one **SSIS ETL job** to **Redshift**. For this, we will search for another, more clear example:
 4. Reset the **Discovery** page by clicking the <img width="21" height="20" alt="image" src="https://github.com/user-attachments/assets/3eabeedf-3c18-4e2b-a9b8-ff9bc1d27760" />
  icon.
 5. Search for **TotalProductCost** and select **SQL Commands** under **SSIS** section.
 6. Click one of the SQL Scripts and then click on the <img width="26" height="29" alt="image" src="https://github.com/user-attachments/assets/0d1f5a24-2284-4ce2-b053-91d7ccf2f277" />
  icon.
 7. Click the **Octomize** tab and then select **Migration Assistance**.
-8. Select **SQL Server** in the **From Vendor** box and **Redshift** in the **To Vendor** box.
-9. Click icon and review script conversion.
+8. Select **SQL Server** (which is **SSIS**) in the **From Vendor** box and **Redshift** in the **To Vendor** box.
+9. Click on the play icon and review the script conversion. Octopai will show you guidance on a possible migration. You will see that you do not only get a Redshift version but also detailled comments on things to consider when migrating. 
 
 **Benefit**: Octopai enables informed migrations with full visibility, optimization guidance and script conversion.
 # 
