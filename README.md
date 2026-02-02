@@ -92,13 +92,21 @@ icon.
 4. Reset the **Discovery** page by clicking the <img width="21" height="20" alt="image" src="https://github.com/user-attachments/assets/3eabeedf-3c18-4e2b-a9b8-ff9bc1d27760" />
  icon.
 5. Search for **TotalProductCost** and select **SQL Commands** under **SSIS** section.
-6. Click one of the SQL Scripts and then click on the <img width="26" height="29" alt="image" src="https://github.com/user-attachments/assets/0d1f5a24-2284-4ce2-b053-91d7ccf2f277" />
+6. Click on the first SQL Scripts in the column **SQL Script** and then click on the <img width="26" height="29" alt="image" src="https://github.com/user-attachments/assets/0d1f5a24-2284-4ce2-b053-91d7ccf2f277" />
  icon.
 7. Click the **Octomize** tab and then select **Migration Assistance**.
 8. Select **SQL Server** (which is **SSIS**) in the **From Vendor** box and **Redshift** in the **To Vendor** box.
 9. Click on the play icon and review the script conversion. Octopai will show you guidance on a possible migration. You will see that you do not only get a Redshift version but also detailled comments on things to consider when migrating. 
 
 **Benefit**: Octopai enables informed migrations with full visibility, optimization guidance and script conversion.
+
+Bonus material: Feel free to explore what happense when you change statements within **Live Lineage** on the left hand side within the SQL Server ETL Job. If you change it, you can not only see Interpretation, Optimization and Error Detection within Octomize AI but also see how the Flow changes and how Lineage-Based error (e.g. orphaned columns) arise. See the following three screenshots where I changed **UnitPrice** to **UnitPriceDSHFLKDSNFLDKSFNDSLKFNDSLKFNDLSKFNLD**
+
+<img width="1510" height="949" alt="Live Lineage 1" src="https://github.com/user-attachments/assets/01eebf3d-2947-40c4-929a-54bb5d3e0178" />
+<img width="1559" height="1248" alt="Live Lineage 2" src="https://github.com/user-attachments/assets/4db60d33-8c38-4265-af12-eb693fb29dac" />
+<img width="1554" height="690" alt="Live Lineage 3" src="https://github.com/user-attachments/assets/d50548cb-8797-43e1-872a-04ed44b2649e" />
+
+
 # 
 ## Exercise #5
 **FinOps / Cost Reduction**
