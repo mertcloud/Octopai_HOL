@@ -18,10 +18,10 @@ icon.
 .
 6. Locate the **MRRSALESORDERS** component and select the **TotalProductCost** column.
 7. Double-click the **MRRSALESORDERS** header and review the calculation on Line 12 of the component script.
-8. Go back to **E2E** and select the **Knowledge Hub** icon <img width="25" height="21" alt="image" src="https://github.com/user-attachments/assets/c0c87375-9de5-42f0-9f1c-fea8c027a8d4" />
- for the **TotalProductCost** column in the **StgFactSales** table.
-9. Review Description and Technical Description of the asset.
-10. Impact Analysis: Shortcut back to **E2E** and open the **Cross System Lineage** <img width="28" height="31" alt="image" src="https://github.com/user-attachments/assets/29f62b36-fec5-4561-bee9-b44bf9def405" />
+8. Go back to **E2E Column Lineage** via the "Go back" function of your browser and select the **Knowledge Hub** icon <img width="25" height="21" alt="image" src="https://github.com/user-attachments/assets/c0c87375-9de5-42f0-9f1c-fea8c027a8d4" />
+ for the **TotalProductCost** column in the **STGFACTSALES** table. You can find it in within **Load STG** --> **populate StgFactPurchasing** --> **STGFACTSALES** 
+9. Review Description and Technical Description of the asset. Did you spot the error in the SQL script?
+10. Impact Analysis: Shortcut back to **E2E** and open click on **E2E_Stg_Sales** --> **DBO** --> **StgFactSales** --> **TotalProductCost** and see the highlighted Column and its origins. This can be useful for further Root Cause Analyses 
  of the **DhwFactSales** table.
 
 **Benefit**: Octopai reduces RCA time from days to minutes, increasing confidence in data integrity and improving efficiency.
@@ -38,14 +38,14 @@ icon.
 4. Go to the **Cross System Lineage Dashboard** <img width="43" height="43" alt="image" src="https://github.com/user-attachments/assets/85056571-98e7-4c00-82ff-38551f8dc2f8" />
  and search for the **EmailAddress** table using the **Person** schema <schema name.table> in the top search bar.
 5. Hover over the table and click on the Cross System Lineage <img width="28" height="31" alt="image" src="https://github.com/user-attachments/assets/27411666-1939-45f6-9bce-9b4c65e5cde3" />
- icon.
-6. Use **Impact Analysis/Lineage Override** <img width="23" height="25" alt="image" src="https://github.com/user-attachments/assets/cb83e796-b82e-4379-8479-93e38c950a26" />
- in the radial menu of objects to discover dependencies.
+ icon. Here you can see all downstream components referencing to this schema. This will help you when you have to change this schema.
+6. Use **Cross System Lineage** <img width="23" height="25" alt="image" src="https://github.com/user-attachments/assets/cb83e796-b82e-4379-8479-93e38c950a26" />
+ in the radial menu of objects to discover further dependencies of one of the other downstream elements. You will always see Person.EmailAddress as one of many components. 
 7. Navigate to the **E2E Lineage Dashboard** <img width="43" height="43" alt="image" src="https://github.com/user-attachments/assets/c6b95f95-183e-43a7-b2b4-1b03f8dd14c9" />
  and search for **EmailAddress**.
-8. Under the **DB Objects** section, locate the table with the **Person** schema and **EmailAddress** column.
+8. Under the **DB Objects** section, locate the table with the **Person** schema, **EmailAdress** table name and **EmailAddress** column.
 9. Click on the **E2E Column Lineage** <img width="28" height="29" alt="image" src="https://github.com/user-attachments/assets/df487676-5220-423a-9d68-b7e5150bbc73" />
- icon. Examine impact at the column level.
+ icon. Now, you can see the lineage of a single column over all systems. If you plan changes of this column, you could now examine the impact on downstream components.
 
 **Benefit**: Octopai reduces risks of change management activities and empowers proactive teams.
 # 
