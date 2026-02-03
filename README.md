@@ -115,12 +115,12 @@ Bonus material: Feel free to explore what happense when you change statements wi
 
 1. Navigate to **Discovery** <img width="37" height="29" alt="image" src="https://github.com/user-attachments/assets/ff01c9f3-3e02-4a22-b356-eacd62908cdb" />
  and search for the ETL/Package name **Load STG**.
-2. Go to **SSIS** and click on **SQL Commands** and then group by **Package Name**.
+2. Go to **SSIS** and click on **SQL Commands**, show 50 items per page and then group by **Package Name**. Drag a column header and drop under **Collapse All**  to group by that column.
 3. Note that there are two packages doing the same thing and it may make sense to remove one after verification (e.g., download as CSV and compare).
 4. The same can be done with reports to identify duplicate or unnecessary instances.
 5. Navigate to the **Cross System Lineage Dashboard** <img width="43" height="43" alt="image" src="https://github.com/user-attachments/assets/b52d49cb-4f78-433e-9587-dfe8ff201f72" />
  and search for **DwhFactSales**.
-6. Hover over the table object and select **Cross System Lineage** <img width="28" height="31" alt="image" src="https://github.com/user-attachments/assets/072a40f9-8e74-4391-a5d4-16743558eb47" />
+6. Hover over the first table object (**E2E_Dwh_Sales.dbo.DwhFactSales**) and select **Cross System Lineage** <img width="28" height="31" alt="image" src="https://github.com/user-attachments/assets/072a40f9-8e74-4391-a5d4-16743558eb47" />
 .
 7. Notice several dashboards that use identical datasets. This suggests reporting duplication—one of the most common hidden cost drivers in cloud BI.
 8. From a FinOps and governance perspective it may be desirable to send to consumer groups to see if these can be cleaned up. Which ones are being used?
