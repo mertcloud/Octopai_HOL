@@ -95,8 +95,9 @@ icon.
 6. Click on the first SQL Scripts in the column **SQL Script** and then click on the <img width="26" height="29" alt="image" src="https://github.com/user-attachments/assets/0d1f5a24-2284-4ce2-b053-91d7ccf2f277" />
  icon.
 7. Click the **Octomize** tab and then select **Migration Assistance**.
-8. Select **SQL Server** (which is **SSIS**) in the **From Vendor** box and **Redshift** in the **To Vendor** box.
-9. Click on the play icon and review the script conversion. Octopai will show you guidance on a possible migration. You will see that you do not only get a Redshift version but also detailled comments on things to consider when migrating. 
+   IMPORTANT: After changing the SQL commands and trying stuff out, due to a bug, it can be that you need to click on Octomize AI --> Optimization and Re-Run the Optimization job. Then you should see the changes.
+9. Select **SQL Server** (which is **SSIS**) in the **From Vendor** box and **Redshift** in the **To Vendor** box.
+10. Click on the play icon and review the script conversion. Octopai will show you guidance on a possible migration. You will see that you do not only get a Redshift version but also detailled comments on things to consider when migrating. 
 
 **Benefit**: Octopai enables informed migrations with full visibility, optimization guidance and script conversion.
 
